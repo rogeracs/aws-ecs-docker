@@ -20,7 +20,7 @@ phases:
       - echo Pushing the Docker image...
       - docker push 337583525037.dkr.ecr.us-west-2.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
       - echo Writing image definitions file...
-      - printf '[{"name":"administrators","imageUri":"%s"}]' 337583525037.dkr.ecr.us-west-2.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG > task-ecs.json
+      - printf '[{"name":"enviaflores-admin-cx-main","imageUri":"%s"}]' 337583525037.dkr.ecr.us-west-2.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG > task-ecs.json
 artifacts:
     files: task-ecs.json
 
